@@ -23104,7 +23104,7 @@ body.avgrund-active {
 }
 
 .content-wrapper {
-  background: #f2eeee;
+  background: #d3d3d3;
   padding: 1.875rem 1.875rem 0 1.875rem;
   width: 100%;
   -webkit-flex-grow: 1;
@@ -23120,7 +23120,7 @@ body.avgrund-active {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 64px);
-  background: #bbd2e1;
+  background: #DCDCDC;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   padding: 0;
@@ -23615,7 +23615,7 @@ body.avgrund-active {
 }
 
 .navbar .navbar-menu-wrapper {
-  background: #bbd2e1;
+  background: #DCDCDC;
   transition: width 0.25s ease;
   -webkit-transition: width 0.25s ease;
   -moz-transition: width 0.25s ease;

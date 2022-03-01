@@ -15,7 +15,7 @@ export class NewPersonnelComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ajoutPersonnel(form: NgForm){
+  ajoutPersonnel(form: NgForm): void{
     console.log(form.value);
     if(form.value['password'] == form.value['repeatpassword']){
       this.service.ajoutPersonnel(form.value).subscribe((data: any)=>{

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateTicketComponent } from './create-ticket/create-ticket.component';
+import { ListTicketComponent } from './list-ticket/list-ticket.component';
 import { ListePersonnelComponent } from './liste-personnel/liste-personnel.component';
 import { ListeUtilisateurComponent } from './liste-utilisateur/liste-utilisateur.component';
 import { NewPersonnelComponent } from './new-personnel/new-personnel.component';
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path:"create/ticket",
     component:CreateTicketComponent
+  },
+  {
+    path:"list/ticket",
+    component:ListTicketComponent
   },
 ];
 

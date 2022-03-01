@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { ListeUtilisateurComponent } from './liste-utilisateur/liste-utilisateur.component';
 import { NewUtilisateurComponent } from './new-utilisateur/new-utilisateur.component';
 
+import { ListTicketComponent } from './list-ticket/list-ticket.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { NewUtilisateurComponent } from './new-utilisateur/new-utilisateur.compo
     ListePersonnelComponent,
     CreateTicketComponent,
     ListeUtilisateurComponent,
-    NewUtilisateurComponent
+    NewUtilisateurComponent,
+  
+    ListTicketComponent
   ],
   imports: [
     BrowserModule,

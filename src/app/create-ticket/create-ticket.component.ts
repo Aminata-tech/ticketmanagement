@@ -16,9 +16,16 @@ export class CreateTicketComponent implements OnInit {
 
   ajoutTicket(form: NgForm){
     console.log(form.value);
+    let ticket={
+      type_demande: form.value['type_demande'],
+      date_envoie: new Date(),
+      etat: 'actif',
+      statut: 'encours',
+      description: form.value['description']
+    }
   
-      this.service.ajoutTicket(form.value).subscribe((data: any)=>{
-        this.router.navigate(['liste/personnel']);
+      this.service.ajoutTicket(ticket).subscribe((data: any)=>{
+        this.router.navigate(['list/ticket']);
       })
     }
 
