@@ -28,7 +28,7 @@ import { ListTicketComponent } from './list-ticket/list-ticket.component';
     ListeUtilisateurComponent,
     NewUtilisateurComponent,
   
-    ListTicketComponent
+    ListTicketComponent,
   ],
   imports: [
     BrowserModule,

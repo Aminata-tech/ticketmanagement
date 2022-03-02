@@ -37,6 +37,7 @@ const routes: Routes = [
     path:"list/ticket",
     component:ListTicketComponent
   },
+  
 ];
 
 @NgModule({
