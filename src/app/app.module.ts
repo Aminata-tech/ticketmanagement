@@ -15,6 +15,7 @@ import { ListeUtilisateurComponent } from './liste-utilisateur/liste-utilisateur
 import { NewUtilisateurComponent } from './new-utilisateur/new-utilisateur.component';
 
 import { ListTicketComponent } from './list-ticket/list-ticket.component';
+import { WorkflowComponent } from './workflow/workflow.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ListTicketComponent } from './list-ticket/list-ticket.component';
     NewUtilisateurComponent,
   
     ListTicketComponent,
+       WorkflowComponent,
   ],
   imports: [
     BrowserModule,
