@@ -13,6 +13,15 @@ url= environment.url;
 
   constructor(private http: HttpClient) { }
 
+  // Authentification
+  public authUser(email: any, pwd: any, type: any){
+    return this.http.get(this.url + `utilisateur/utilisateur/auth/${email}/${pwd}/${type}`);
+  }
+
+  public authPersonnel(email: any, pwd: any, type: any){
+    return this.http.get(this.url + `personnel/personnel/auth/${email}/${pwd}/${type}`);
+}
+
   // Gestion personnel
   public ajoutPersonnel(data: any){
     return this.http.post(this.url + "personnel/save/personnel", data);

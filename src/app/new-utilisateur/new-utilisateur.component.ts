@@ -14,7 +14,7 @@ export class NewUtilisateurComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ajoutUtilisateur(form: NgForm){
+  ajoutUtilisateur(form: NgForm): void{
     console.log(form.value);
     if(form.value['password'] == form.value['repeatpassword']){
       this.service.ajoutUtilisateur(form.value).subscribe((data: any)=>{

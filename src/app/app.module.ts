@@ -16,6 +16,7 @@ import { NewUtilisateurComponent } from './new-utilisateur/new-utilisateur.compo
 
 import { ListTicketComponent } from './list-ticket/list-ticket.component';
 import { WorkflowComponent } from './workflow/workflow.component';
+import { PageComponent } from './login/page/page.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { WorkflowComponent } from './workflow/workflow.component';
     CreateTicketComponent,
     ListeUtilisateurComponent,
     NewUtilisateurComponent,
+    PageComponent,
   
     ListTicketComponent,
        WorkflowComponent,

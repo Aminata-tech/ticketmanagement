@@ -19,7 +19,7 @@ export class NewPersonnelComponent implements OnInit {
     console.log(form.value);
     if(form.value['password'] == form.value['repeatpassword']){
       this.service.ajoutPersonnel(form.value).subscribe((data: any)=>{
-        this.router.navigate(['liste/personnel']);
+          this.router.navigate(['liste/personnel']);
       })
     }else{
 
