@@ -43,8 +43,8 @@
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link text-dark" href="new/personnel">Ajouter personnel</a></li>
             <li class="nav-item"> <a class="nav-link text-dark" href="liste/personnel">Liste des personnels</a></li>
-            <li class="nav-item"> <a class="nav-link text-dark" href="workflow">Statistique</a></li>
-            <li class="nav-item"><a class="nav-link text-dark" href="list/ticket ">Liste des ticket</a></li>
+            <!-- <li class="nav-item"> <a class="nav-link text-dark" href="workflow">Statistique</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="list/ticket ">Liste des ticket</a></li> -->
           </ul>
           
           
@@ -66,10 +66,10 @@
         </div>
       </li>
       
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="userConnect.typeuser === 'User'">
         <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
           <i class="typcn  typcn typcn-edit menu-icon text-dark"></i>
-          <span class="menu-title text-dark">Ajouter ticket</span>
+          <span class="menu-title text-dark">Gestion des Tickets</span>
           <i class="menu-arrow text-dark"></i>
         </a>
         <div class="collapse" id="form-elements">
@@ -79,14 +79,31 @@
             <li class="nav-item"><a class="nav-link text-dark" href="list/ticket ">Mes tickets</a></li>
           </ul>
         </div>
-      </li><br><br><br><br><br><br>
+      </li>
+
+      <li class="nav-item" *ngIf="userConnect.typeuser === 'Admin'">
+        <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+          <i class="typcn  typcn typcn-edit menu-icon text-dark"></i>
+          <span class="menu-title text-dark">Gestion Tickets</span>
+          <i class="menu-arrow text-dark"></i>
+        </a>
+        <div class="collapse" id="form-elements">
+          <ul class="nav flex-column sub-menu">
+            <!-- <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Incription</a></li> -->
+            <li class="nav-item"><a class="nav-link text-dark" href="ticket/atraites">A traités</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="ticket/encours ">En cours</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="ticket/traites">Traités</a></li>
+          </ul>
+        </div>
+      </li>
+      <br><br><br><br><br><br>
 
         <!-- <li> 
           <p class="sidebar-menu-title text-dark">Déconnexion</p>
         </li> -->
          
         <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+          <a class="nav-link" data-toggle="collapse" (click)="Deconnexion()" aria-controls="form-elements">
             <i class="typcn  typcn  typcn-eject menu-icon text-dark"></i>
             <span class="menu-title text-dark">DECONNEXION</span>
           </a>

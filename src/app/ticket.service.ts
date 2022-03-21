@@ -32,6 +32,10 @@ url= environment.url;
   public updatePersonnel(id: any, data: any){
     return this.http.put(this.url + "personnel/update/personnel/"+id, data);
   }
+
+  public detailTicket(id: any){
+    return this.http.get(this.url + "ticket/detail/ticket/"+id);
+  }
   public deletePersonnel(id: any){
     return this.http.delete(this.url + "personnel/delete/"+id);
   }

@@ -12,62 +12,59 @@
 <app-tapbar></app-tapbar>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_settings-panel.html -->
-    
-      <!-- partial -->
+     
       <!-- partial:partials/_sidebar.html -->
     <app-sidebar> </app-sidebar>
     <div class="col-lg-10 grid-margin stretch-card">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Liste des personnels</h4>
-            <!-- <p class="card-description">
-              Add class <code>.table-bordered</code>
-            </p> -->
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <h4 class="card-title">Tickets à traités</h4>
+              </div>
+              <div class="col-lg-6 col-md-6"></div>
+            </div>
             <div class="table-responsive pt-3">
               <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th>
-                    Nom
-                    </th>
-                    <th>
-                      Prénom
+                      Date
                     </th>
                    
                     <th>
-                      Adresse 
+                      Type
                     </th>
                     <th>
-                      E-mail
+                      Description 
                     </th>
                     <th>
-                        Telephone
-                      </th>
+                      Action
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr *ngFor="let perso of perso">
                     <td>
-                      {{perso.nom}}
+                      {{perso.date_envoie | date : 'dd-MM-Y'}}
                     </td>
                     <td>
-                      {{perso.prenom}}
+                      {{perso.type_demande}}
                     </td>
                     <td>
-                      {{perso.adresse}}
+                      {{perso.description}}
                     </td>
                     <td>
-                      {{perso.email}}
-                    </td>
-                    <td>
-                      {{perso.tel}}
+                        <span class="badge badge-primary ml-3" (click)="encours(perso.id)">Mettre en cours</span>
                     </td>
                   </tr>
                   
                 </tbody>
               </table>
             </div>
+
+            
+
           </div>
         </div>
       </div>
@@ -83,3 +80,4 @@
       <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard </a>templates from Bootstrapdash.com</span>
     </div>
   </footer>
+

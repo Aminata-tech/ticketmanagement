@@ -9,9 +9,12 @@ import { TicketService } from '../ticket.service';
   styleUrls: ['./create-ticket.component.scss']
 })
 export class CreateTicketComponent implements OnInit {
-
+user: any;
+userConnect: any;
   constructor(private service: TicketService, public router: Router) { }
   ngOnInit(): void {
+    this.user = localStorage.getItem('user');
+    this.userConnect = JSON.parse (this.user);
   }
 
   ajoutTicket(form: NgForm){
@@ -20,7 +23,8 @@ export class CreateTicketComponent implements OnInit {
       type_demande: form.value['type_demande'],
       date_envoie: new Date(),
       etat: 'actif',
-      statut: 'encours',
+      statut: 'atraites',
+      utilisateur: this.userConnect,
       description: form.value['description']
     }
   

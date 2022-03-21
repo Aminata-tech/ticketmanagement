@@ -57,7 +57,11 @@
                     
                       
                       <div class="form-group">
-                        <input type="text" class="form-control" name="type_demande" ngModel  placeholder="Type de demande " required>
+                        <select class="form-control" name="type_demande" ngModel  placeholder="Type de demande " required>
+                          <option value="">---Sélectionner un type---</option>
+                          <option value="Panne">Panne</option>
+                          <option value="Besoin">Besoin</option>
+                        </select>
                       </div>
                     <div class="form-group">
                       

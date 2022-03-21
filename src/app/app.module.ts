@@ -17,6 +17,9 @@ import { NewUtilisateurComponent } from './new-utilisateur/new-utilisateur.compo
 import { ListTicketComponent } from './list-ticket/list-ticket.component';
 import { WorkflowComponent } from './workflow/workflow.component';
 import { PageComponent } from './login/page/page.component';
+import { AtraitesComponent } from './atraites/atraites.component';
+import { EncoursComponent } from './encours/encours.component';
+import { TraitesComponent } from './traites/traites.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { PageComponent } from './login/page/page.component';
   
     ListTicketComponent,
        WorkflowComponent,
+       AtraitesComponent,
+       EncoursComponent,
+       TraitesComponent,
   ],
   imports: [
     BrowserModule,
