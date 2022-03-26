@@ -8812,20 +8812,20 @@ a {
   background-color: transparent;
 }
 
-a:hover {
+/* a:hover {
   color: #0056b3;
   text-decoration: underline;
-}
+} */
 
 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
 }
 
-a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+/* a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 a:not([href]):not([tabindex]):focus {
   outline: 0;
@@ -10065,10 +10065,10 @@ pre code {
   background-color: #e8eff9;
 }
 
-.table-hover tbody tr:hover {
+/* .table-hover tbody tr:hover {
   color: #212529;
   background-color: #eaeaf1;
-}
+} */
 
 .table-primary,
 .table-primary > th,
@@ -18105,11 +18105,11 @@ button.bg-dark:focus,
 }
 
 .text-primary, .list-wrapper .completed .remove {
-  color: #f2125e !important;
+  color: #ff0000 !important;
 }
 
 a.text-primary:hover, .list-wrapper .completed a.remove:hover, a.text-primary:focus, .list-wrapper .completed a.remove:focus {
-  color: #ae0a41 !important;
+  color: #ff0000 !important;
 }
 
 .text-secondary, .list-wrapper .remove {
@@ -23039,10 +23039,10 @@ body.avgrund-active {
   margin: 0 auto 5px auto;
 }
 
-.auth.multi-step-login .step-form .step-progress li.active:before {
+/* .auth.multi-step-login .step-form .step-progress li.active:before {
   background: #17c964;
   color: #fff;
-}
+} */
 
 .auth.multi-step-login .step-form .step-progress li:first-child:after {
   content: none;
@@ -23326,7 +23326,7 @@ body.avgrund-active {
   transform: rotate(360deg);
 }
 
-.sidebar .nav .nav-item.active > .nav-link {
+/* .sidebar .nav .nav-item.active > .nav-link {
   background: #414147;
   position: relative;
 }
@@ -23338,7 +23338,7 @@ body.avgrund-active {
 
 .sidebar .nav .nav-item.active > .nav-link i {
   color: #2b80ff;
-}
+} */
 
 .sidebar .nav:not(.sub-menu) {
   margin-top: 0rem;
@@ -23352,10 +23352,10 @@ body.avgrund-active {
   margin: 0;
 }
 
-.sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link {
+/* .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link {
   background: #414147;
   color: #fff;
-}
+} */
 
 .sidebar .nav.sub-menu {
   margin-bottom: 0;
@@ -23401,7 +23401,7 @@ body.avgrund-active {
   border-top: 0;
 }
 
-.sidebar .nav.sub-menu .nav-item .nav-link:hover {
+/* .sidebar .nav.sub-menu .nav-item .nav-link:hover {
   color: #fff;
 }
 
@@ -23412,7 +23412,7 @@ body.avgrund-active {
 
 .sidebar .nav.sub-menu .nav-item:hover {
   background: transparent;
-}
+} */
 
 .sidebar .nav-search {
   margin: 0 1.562rem 1rem 1.562rem;
@@ -23496,7 +23496,7 @@ body.avgrund-active {
   color: inherit;
 }
 
-.sidebar-light .sidebar .nav .nav-item.active > .nav-link {
+/* .sidebar-light .sidebar .nav .nav-item.active > .nav-link {
   background: initial;
 }
 
@@ -23532,7 +23532,7 @@ body.avgrund-active {
 
 .sidebar-light .sidebar .nav.sub-menu .nav-item:hover {
   background: transparent;
-}
+} */
 
 /* style for off-canvas menu*/
 @media screen and (max-width: 991px) {
@@ -25214,9 +25214,9 @@ body.avgrund-active {
   border-radius: 100%;
 }
 
-.tickets-tab-content .tickets-card:hover {
+/* .tickets-tab-content .tickets-card:hover {
   background: #f3f3f3;
-}
+} */
 
 .user-lidting-thumb {
   position: relative;

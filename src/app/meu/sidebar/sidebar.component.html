@@ -1,6 +1,6 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
-      <li class="nav-item">
+      <li class="">
         <div class="d-flex sidebar-profile">
           <!-- <div class="sidebar-profile-image">
             <img src="" alt="image">
@@ -28,9 +28,13 @@
         <p class="sidebar-menu-title text-dark"> Menu principal</p>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="list/ticket">
+        <a class="nav-link" href="" *ngIf="userConnect.typeuser === 'User'">
           <i class="typcn typcn-home-outline menu-icon text-dark"></i>
-          <span class="menu-title text-dark">Accueil <span class="badge badge-primary ml-3">New</span></span>
+          <span class="menu-title text-dark">Accueil</span>
+        </a>
+        <a class="nav-link" href="ticket/atraites" *ngIf="userConnect.typeuser === 'Admin'">
+          <i class="typcn typcn-home-outline menu-icon text-dark"></i>
+          <span class="menu-title text-dark">Accueil</span>
         </a>
       </li>
       <li class="nav-item"  *ngIf="userConnect.typeuser === 'Admin'">
@@ -102,10 +106,10 @@
           <p class="sidebar-menu-title text-dark">Déconnexion</p>
         </li> -->
          
-        <li class="nav-item">
+        <li class="nav-item ">
           <a class="nav-link" data-toggle="collapse" (click)="Deconnexion()" aria-controls="form-elements">
-            <i class="typcn  typcn  typcn-eject menu-icon text-dark"></i>
-            <span class="menu-title text-dark">DECONNEXION</span>
+            <i class="typcn  typcn  typcn-eject menu-icon text-dark" ></i>
+            <span class="menu-title text-dark" style="cursor: default;">DECONNEXION</span>
           </a>
           
 

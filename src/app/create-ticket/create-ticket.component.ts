@@ -27,7 +27,6 @@ userConnect: any;
       utilisateur: this.userConnect,
       description: form.value['description']
     }
-  
       this.service.ajoutTicket(ticket).subscribe((data: any)=>{
         this.router.navigate(['list/ticket']);
       })

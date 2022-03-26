@@ -14,6 +14,8 @@ userConnect: any;
   ngOnInit(): void {
     this.user = localStorage.getItem('user');
     this.userConnect = JSON.parse (this.user);
+    console.log(this.userConnect);
+    
   }
 
   Deconnexion(){
