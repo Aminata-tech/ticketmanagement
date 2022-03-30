@@ -55,6 +55,8 @@
                     </td>
                     <td>
                         <button class="badge badge-primary ml-3" (click)="encours(perso.id)">Remettre encours</button>
+                        <button class="badge badge-primary ml-3" *ngIf="perso.statut==='rejeter'">Réjeté</button>
+                        <button class="badge badge-primary ml-3" *ngIf="perso.statut==='traites'">Validé</button>
                     </td>
                   </tr>
                   

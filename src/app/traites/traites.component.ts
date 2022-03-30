@@ -23,7 +23,7 @@ export class TraitesComponent implements OnInit {
 
     this.service.listTicket().subscribe((data: any)=>{
       for(let i = 0; i< data.length; i++){
-        if(data[i].statut== 'traites'){
+        if(data[i].statut== 'traites' || data[i].statut== 'rejeter'){
           this.perso.push(data[i]);
         }
       }

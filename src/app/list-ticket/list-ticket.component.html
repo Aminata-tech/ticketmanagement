@@ -29,6 +29,7 @@
                   <option>A Traités</option>
                   <option>En cours</option>
                   <option>Traités</option>
+                  <option>Rejeter</option>
                 </select>
               </div>
             </div>
@@ -66,6 +67,7 @@
                       <span class="badge badge-primary ml-3" *ngIf="perso.statut === 'atraites'">A traiter</span>
                       <span class="badge badge-warning ml-3" *ngIf="perso.statut === 'encours'">En cours</span>
                       <span class="badge badge-success ml-3" *ngIf="perso.statut === 'traites'">Déjà traité</span>
+                      <span class="badge badge-success ml-3" *ngIf="perso.statut === 'rejeter'">Rejeter</span>
                     </td>
                   </tr>
                   

@@ -48,7 +48,7 @@ export class EncoursComponent implements OnInit {
   rejeter(id: any){
     this.service.detailTicket(id).subscribe((ticket: any)=>{
       console.log(ticket);
-      ticket.statut = 'traites';
+      ticket.statut = 'rejeter';
       this.service.updateTicket(id, ticket).subscribe((data: any)=>{
         console.log(data);
         

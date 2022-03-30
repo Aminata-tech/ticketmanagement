@@ -15,6 +15,7 @@ export class ListTicketComponent implements OnInit {
   encours: any = [];
   traites: any = [];
   Atraiter: any = [];
+  Rejeter: any = [];
 
   click = false;
   constructor(private service: TicketService) { }
@@ -35,7 +36,7 @@ export class ListTicketComponent implements OnInit {
           this.encours.push(data[i]);
         }
 
-        if(data[i].utilisateur.id == this.userConnect.id && data[i].statut == 'traites'){
+        if(data[i].utilisateur.id == this.userConnect.id && (data[i].statut == 'traites' || data[i].statut == 'rejeter')){
           this.traites.push(data[i]);
         }
 
@@ -70,11 +71,16 @@ export class ListTicketComponent implements OnInit {
     if(tick.target.value == 'A Traités'){
       this.click = true;
       this.perso = this.Atraiter;
+    
     }
+    if(tick.target.value == 'Rejeter'){
+      this.click = true;
+      this.perso = this.Rejeter;
     
   }
 
   
   
 
+}
 }
